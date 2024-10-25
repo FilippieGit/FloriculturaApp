@@ -31,15 +31,40 @@ public class MainActivity extends AppCompatActivity {
 
         lstFlores = new ArrayList<>();
         lstFlores.add(
-                new Flores("Rosa",R.drawable.rosa)
-                new Flores("Rosa",R.drawable.rosa)
+                new Flores("Rosa", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Kalanchoê", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Hibisco", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Girassol", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Íris", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Hortênsia", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Gerânio", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Gérbera", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Cravo", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Ciclame", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Cineraria", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Camelia", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Calêndula", R.drawable.rosa)
+        );lstFlores.add(
+                new Flores("Antúrio", R.drawable.rosa)
         );
 
         recyclerView = findViewById(R.id.idRecFlores);
 
-        Adaptador adaptador = new Adaptador(getApplicationContext(),lstFlores);
+        Adaptador adaptador = new Adaptador(getApplicationContext(), lstFlores);
 
-        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
 
         recyclerView.hasFixedSize();
 
